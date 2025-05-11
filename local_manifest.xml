@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <remote name="moto-unified"
+        fetch="https://github.com/Moto-Mediatek-Unified" />
+
+    <!-- Device specific -->
+    <project path="device/motorola/vicky" name="device_motorola_vicky"
+        remote="moto-unified" revision="lineage-22.1" />
+    <project path="device/motorola/vicky-kernel" name="device_motorola_vicky-kernel"
+        remote="moto-unified" revision="lineage-22.1" />
+    <!-- project path="vendor/motorola/vicky" name="vendor_motorola_vicky"
+        remote="moto-unified" revision="lineage-22.1" -->
+
+    <!-- Hardware repos -->
+    <project path="hardware/mediatek" name="android_hardware_mediatek"
+        remote="moto-unified" revision="lineage-22.1" />
+    <project path="hardware/motorola" name="LineageOS/android_hardware_motorola"
+        revision="lineage-22.1" />
+  
+    <!-- Sepolicy -->
+    <project path="device/mediatek/sepolicy_vndr" name="LineageOS/android_device_mediatek_sepolicy_vndr"
+        revision="lineage-22.1" />
+  </manifest>
+
+  
