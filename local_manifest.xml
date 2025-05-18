@@ -2,7 +2,8 @@
 <manifest>
     <remote name="moto-unified"
         fetch="https://github.com/Moto-Mediatek-Unified" />
-
+    <remote  name="aosp"
+        fetch="https://android-review.googlesource.com/" />
     <!-- Device specific -->
     <project path="device/motorola/vicky" name="device_motorola_vicky"
         remote="moto-unified" revision="lineage-22.1" />
@@ -10,6 +11,8 @@
         remote="moto-unified" revision="lineage-22.1" />
     <!-- project path="vendor/motorola/vicky" name="vendor_motorola_vicky"
         remote="moto-unified" revision="lineage-22.1" -->
+      <project path="kernel/common/android12-5.10" name="kernel/common"
+        remote="aosp" revision="android12-5.10" />
 
     <!-- Hardware repos -->
     <project path="hardware/mediatek" name="android_hardware_mediatek"
@@ -19,7 +22,5 @@
   
     <!-- Sepolicy -->
     <project path="device/mediatek/sepolicy_vndr" name="LineageOS/android_device_mediatek_sepolicy_vndr"
-        revision="lineage-22.1" />
+      revision="lineage-22.1" />
   </manifest>
-
-  
